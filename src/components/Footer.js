@@ -10,37 +10,33 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Footer() {
   return (
-    <Navbar fixed="bottom">
-      <Row>
-        <Col>
-          <Row>
-            <Col>
-              <Card.Img
-                src={Image}
-                style={{
-                  height: "90px",
-                  width: "90px",
-                }}
-              />
-            </Col>
-            <Col>
-              <p> The Breakfast Club</p>
-              <p> Low key Step Mom </p>
-            </Col>
-          </Row>
-        </Col>
-        <Col>
-          <AudioPlayer autoPlay src="http://example.com/audio.mp3" />
-        </Col>
-        <Col>
-          <FontAwesome
-            className="super-crazy-colors"
-            name="rocket"
-            size="20x"
-          />
-        </Col>
-      </Row>
-    </Navbar>
+    // <Navbar fixed="bottom">
+    <Row>
+      <Col>
+        <Row>
+          <Col>
+            <Card.Img
+              src={Image}
+              style={{
+                height: "90px",
+                width: "90px",
+              }}
+            />
+          </Col>
+          <Col>
+            <p> The Breakfast Club</p>
+            <p> Low key Step Mom </p>
+          </Col>
+        </Row>
+      </Col>
+      <Col>
+        <AudioPlayer autoPlay src="http://example.com/audio.mp3" />
+      </Col>
+      <Col>
+        <FontAwesome className="super-crazy-colors" name="rocket" size="20x" />
+      </Col>
+    </Row>
+    // </Navbar>
   );
 }
 
