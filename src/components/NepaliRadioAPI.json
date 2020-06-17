@@ -1,0 +1,39 @@
+{
+    "results": [{
+            "radio_name": "Ujyaalo Radio Network",
+            "radio_address": "Lalitpur, Nepal",
+            "radio_mhz": "90.0 MHz",
+            "radio_stream": "http://node-14.zeno.fm/h527zwd11uquv?rj-ttl=5&rj-tok=AAABcr0c-7EAdkhB7NZgsd5N8g.mp3"
+        },
+        {
+            "radio_name": "Radio Kantipur",
+            "radio_address": "Lalitpur, Nepal",
+            "radio_mhz": "96.1 MHz",
+            "radio_stream": "https://radio-broadcast.ekantipur.com/stream.mp3"
+        },
+        {
+            "radio_name": "Kalika FM",
+            "radio_address": "Chitwan, Nepal",
+            "radio_mhz": "95.2 MHz",
+            "radio_stream": "http://kalika-stream.softnep.com:7740/;stream.nsv&type=mp3&volume=60.mp3"
+        },
+        {
+            "radio_name": "Khozee Radio",
+            "radio_address": "Kathmandu, Nepal",
+            "radio_mhz": "Online",
+            "radio_stream": "http://kalika-stream.softnep.com:7740/;stream.nsv&type=mp3&volume=60.mp3"
+        },
+        {
+            "radio_name": "Image News",
+            "radio_address": "Kathmandu, Nepal",
+            "radio_mhz": "103.6 MHz",
+            "radio_stream": "http://kalika-stream.softnep.com:7740/;stream.nsv&type=mp3&volume=60.mp3"
+        }
+    ]
+}
+
+
+
+
+Image News
+103.6 MHz | Kathmandu, Nepal
