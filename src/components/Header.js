@@ -1,61 +1,51 @@
-import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
-import Image from "../image/iheart.jpg";
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
+
+import logo from '../image/iheart.jpg';
 
 function Header() {
   return (
-    <Navbar sticky="top" style={{ backgroundColor: "#FFFFFF" }}>
-      <Row>
-        <Col md={2}>
-          <Row>
-            <Col>
-              <Card.Img
-                src={Image}
-                style={{
-                  borderEndEndRadius: "30",
-                  height: "40px",
-                  width: "40px",
-                }}
-              />
-            </Col>
-            <Col style={{ paddingRight: "80px" }}>
-              <Navbar.Brand href="#home">
-                <h5>
-                  <strong> iHeart</strong>RADIO{" "}
-                </h5>
-              </Navbar.Brand>
-            </Col>
-          </Row>
-        </Col>
-        <Col md={8} style={{ alignContent: "center" }}>
-          <Row>
-            <Col md={3}></Col>
-            <Col md={3} style={{ alignContent: "left" }}>
-              <p> Your libary </p>
-            </Col>
-            <Col md={3} style={{ alignContent: "center" }}>
-              <p href=""> Prodcast </p>
-            </Col>
-            <Col md={3} style={{ alignContent: "right" }}>
-              <p href=""> News </p>
-            </Col>
-          </Row>
-        </Col>
-        <Col md={2} style={{ alignContent: "right" }}>
-          <Form>
-            <FormControl
-              type="text"
-              placeholder="Search"
-              className="mr-sm-2 rounded-top"
-            />
-          </Form>
-        </Col>
-      </Row>
+    <Navbar sticky="top" bg="light" variant="light" expand="lg">
+      <Navbar.Brand href="#home">
+        <img
+          alt=""
+          src={logo}
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{' '}
+        <strong>iHeart</strong>RADIO
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#home">Your libary</Nav.Link>
+          <Nav.Link href="#link">Prodcast</Nav.Link>
+          <NavDropdown title="News" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">
+              Another action
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">
+              Separated link
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-success">Search</Button>
+        </Form>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
