@@ -6,9 +6,11 @@
 .cs_audio_bar {
   background-color: #000;
 }
+
 .cs_audio_bar_loaded {
   background-color: #777;
 }
+
 .cs_audio_bar_now {
   background-color: green;
 }

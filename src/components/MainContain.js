@@ -177,6 +177,141 @@ function MainContain() {
           </Row>
         </Col>
       </Row>
+      <Row style={{ paddingTop: "20px" }}>
+        <Col md={3}></Col>
+        <Col md={6}>
+          <Row>
+            <Col md={10} style={{ textAlign: "left" }}>
+              <h4>
+                <strong> Featured Podcasts</strong>
+              </h4>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+      <Row style={{ paddingTop: "20px" }}>
+        <Col md={3}></Col>
+        <Col md={6}>
+          <Row>
+            <Col>
+              <Row style={{ backgroundColor: "#F6F8F9" }}>
+                <Col md={10}>
+                  <a href="">
+                    <Card.Img
+                      src={Image2}
+                      style={{
+                        borderEndEndRadius: "30",
+                        height: "190px",
+                        width: "190px",
+                      }}
+                    />
+                  </a>
+                </Col>
+              </Row>
+              <Row style={{ paddingTop: "15px" }}>
+                <Col md={10}>
+                  <p style={{ textAlign: "center" }}>
+                    {" "}
+                    <strong> Stuff You Should Know</strong>{" "}
+                  </p>
+                </Col>
+                <Col ms={2}></Col>
+              </Row>
+              <Row>
+                <Col md={12}>
+                  <p style={{ textAlign: "center" }}>
+                    If you've ever wanted to know
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <Row style={{ backgroundColor: "#F6F8F9" }}>
+                <Col md={10}>
+                  <a href="">
+                    <Card.Img
+                      src={Image3}
+                      style={{
+                        borderEndEndRadius: "30",
+                        height: "190px",
+                        width: "190px",
+                      }}
+                    />
+                  </a>
+                </Col>
+              </Row>
+              <Row style={{ paddingTop: "15px" }}>
+                <Col md={10}>
+                  <p style={{ textAlign: "center" }}>
+                    {" "}
+                    <strong> Code Switch </strong>{" "}
+                  </p>
+                </Col>
+                <Col ms={2}></Col>
+              </Row>
+              <Row>
+                <Col md={12}>
+                  <p style={{ textAlign: "center" }}>
+                    What's CODE SWITCH? It's the fearless conversations …
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <Row style={{ backgroundColor: "#F6F8F9" }}>
+                <Col md={10}>
+                  <a href="">
+                    <Card.Img
+                      src={Image4}
+                      style={{
+                        borderEndEndRadius: "30",
+                        height: "190px",
+                        width: "190px",
+                      }}
+                    />
+                  </a>
+                </Col>
+              </Row>
+              <Row style={{ paddingTop: "15px" }}>
+                <Col md={11}>
+                  <p style={{ textAlign: "center" }}>
+                    {" "}
+                    <strong> Crime Junkie </strong>{" "}
+                  </p>
+                </Col>
+                <Col ms={1}></Col>
+              </Row>
+              <Row>
+                <Col md={12}>
+                  <p style={{ textAlign: "center" }}>
+                    Crime Junkie is a weekly podcast dedicated to giving…
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+        <Col md={3}></Col>
+      </Row>
+      <Row style={{ paddingTop: "20px" }}>
+        <Col md={3}></Col>
+        <Col md={6}>
+          <Row>
+            <Col md={12}>
+              <p style={{ textAlign: "right", fontSize: "20px" }}>
+                <ins> View All Featured Podcasts</ins>
+                <FontAwesome
+                  className="super-crazy-colors"
+                  name="rocket"
+                  size="2x"
+                  spin
+                  style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
+                />
+              </p>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </div>
   );
 }

@@ -1,12 +1,12 @@
-import React from 'react';
-import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Image from '../image/tbfc.jpg';
-import FontAwesome from 'react-fontawesome';
-import Navbar from 'react-bootstrap/Navbar';
+import React from "react";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Image from "../image/tbfc.jpg";
+import FontAwesome from "react-fontawesome";
+import Navbar from "react-bootstrap/Navbar";
 
 function Footer() {
   return (
@@ -18,8 +18,8 @@ function Footer() {
             <Card.Img
               src={Image}
               style={{
-                height: '90px',
-                width: '90px',
+                height: "90px",
+                width: "90px",
               }}
             />
           </Col>

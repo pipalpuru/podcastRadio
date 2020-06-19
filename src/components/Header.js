@@ -1,15 +1,15 @@
-import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Card from 'react-bootstrap/Card';
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import FormControl from "react-bootstrap/FormControl";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
 
-import logo from '../image/iheart.jpg';
+import logo from "../image/iheart.jpg";
 
 function Header() {
   return (
@@ -21,7 +21,7 @@ function Header() {
           width="30"
           height="30"
           className="d-inline-block align-top"
-        />{' '}
+        />{" "}
         <strong>iHeart</strong>RADIO
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
