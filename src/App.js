@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from "react";
 // import PostForm from "./components/PostForm";
 // import PostList from "./components/PostList";
 // import ShowJsonData from "./components/ShowJsonData";
-import Header from './components/Header';
-import MainContain from './components/MainContain';
-import Footer from './components/StickyPlayer';
+import Header from "./components/Header";
+import MainContain from "./components/MainContain";
+import Footer from "./components/StickyPlayer";
+import DetailView from "./components/DetailView";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <ShowJsonData></ShowJsonData> */}
       <Header />
       <MainContain />
-      <Footer />
+      {/* <Footer /> */}
+      {/* <DetailView /> */}
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.mainContainer {
+    padding-left: 15rem;
+    background-color: #F6F8F9;
+}
+
+.cardHolder {
+    padding-top: 20px;
+}
+
+.dropDown {
+    padding-left: 30px;
+}
+
+/* .cardImageStyle {
+    border-end-end-radius: 30;
+    height: 190px;
+    width: 200px;
+} */

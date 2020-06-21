@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
@@ -7,6 +7,9 @@ import Image2 from "../image/StuffYouShouldKnow.jpg";
 import Image3 from "../image/codeswitch.jpg";
 import Image4 from "../image/crimejunkie.png";
 import FontAwesome from "react-fontawesome";
+import DetailView from "./DetailView";
+import MainContainStyle from "./CustomStyle/MainContainStyle.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Countries = [
   { label: "Albania", value: 355 },
@@ -19,17 +22,63 @@ const Countries = [
 ];
 
 function MainContain() {
+  // const [show, setShow] = useState(false);
+  // let showValue = "";
+  // let mainValue = (
+  //   <button onClick={() => setShow(true)}>
+  //     <Card.Img
+  //       src={Image2}
+  //       style={{
+  //         borderEndEndRadius: "30",
+  //         height: "190px",
+  //         width: "190px",
+  //       }}
+  //     />
+  //   </button>
+  // );
+  // if (show) {
+  //   showValue = <DetailView />;
+  //   mainValue = "";
+  // }
+  // const changeShowDetails = (e) => {
+  //   e.preventDefault();
+  //   setShow(true);
+  //   console.log("clicked on fxn");
+  //   console.log("show>>", show);
+  //   if (!show) {
+  //     showValue = <DetailView />;
+  //   }
+  // };
+  function DetailView() {
+    console.log("okkkkkkkkkkkkkkkkkkkkkkk");
+  }
+
+  // function About() {
+  //   return (
+  //     <div>
+  //       <h2>About</h2>
+  //     </div>
+  //   );
+  // }
+
+  // function Dashboard() {
+  //   return (
+  //     <div>
+  //       <h2>Dashboard</h2>
+  //     </div>
+  //   );
+  // }
+
   return (
-    <div style={{ backgroundColor: "#F6F8F9" }}>
-      <Row style={{ paddingTop: "30px" }}>
-        <Col md={3}></Col>
-        <Col md={6}>
+    <div className="mainContainer">
+      <Row className="cardHolder">
+        <Col md={8}>
           <Row>
-            <Col md={10} style={{ textAlign: "left" }}>
+            <div>
               <h2>
-                <strong> Stream Top Podcasts </strong>{" "}
+                <strong> Stream Top Podcasts </strong>
               </h2>
-            </Col>
+            </div>
           </Row>
           <Row>
             <Col md={7} style={{ textAlign: "left" }}>
@@ -42,41 +91,58 @@ function MainContain() {
         </Col>
         <Col md={4}></Col>
       </Row>
-      <Row style={{ paddingTop: "20px" }}>
-        <Col md={3}></Col>
-        <Col md={6}>
-          <Row>
-            <Col md={10} style={{ textAlign: "left" }}>
-              <h4>
-                <strong> Popular Podcasts</strong>{" "}
-              </h4>
-            </Col>
-          </Row>
-        </Col>
+      <Row className="cardHolder">
+        <div>
+          <h4>
+            <strong> Popular Podcasts</strong>{" "}
+          </h4>
+        </div>
       </Row>
-      <Row style={{ paddingTop: "20px" }}>
-        <Col md={3}></Col>
-        <Col md={6}>
+      <Row className="cardHolder">
+        <Col md={8}>
           <Row>
             <Col>
               <Row style={{ backgroundColor: "#F6F8F9" }}>
                 <Col md={10}>
-                  <a href="">
-                    <Card.Img
-                      src={Image2}
-                      style={{
-                        borderEndEndRadius: "30",
-                        height: "190px",
-                        width: "190px",
-                      }}
-                    />
-                  </a>
+                  <div>
+                    {/* <button onClick={() => setShow(true)}>
+                      <Card.Img
+                        src={Image2}
+                        style={{
+                          borderEndEndRadius: "30",
+                          height: "190px",
+                          width: "190px",
+                        }}
+                      />
+                    </button> */}
+                    {/* {showValue} */}
+                    {/* <Router>
+                      <div>
+                        <ul>
+                          <li>
+                            <Link to="detailView">Home</Link>
+                          </li>
+                        </ul>
+
+                        <hr />
+
+                        <Switch>
+                          <Route path="/dashboard">
+                            <DetailView />
+                          </Route>
+                        </Switch>
+                      </div>
+                    </Router> */}
+
+                    <a href="">
+                      <Card.Img className="cardImageStyle" src={Image2} />
+                    </a>
+                  </div>
                 </Col>
               </Row>
-              <Row style={{ paddingTop: "15px" }}>
+              <Row className="cardHolder">
                 <Col md={10}>
                   <p style={{ textAlign: "center" }}>
-                    {" "}
                     <strong> Stuff You Should Know</strong>{" "}
                   </p>
                 </Col>
@@ -94,21 +160,13 @@ function MainContain() {
               <Row style={{ backgroundColor: "#F6F8F9" }}>
                 <Col md={10}>
                   <a href="">
-                    <Card.Img
-                      src={Image3}
-                      style={{
-                        borderEndEndRadius: "30",
-                        height: "190px",
-                        width: "190px",
-                      }}
-                    />
+                    <Card.Img className="cardImageStyle" src={Image3} />
                   </a>
                 </Col>
               </Row>
               <Row style={{ paddingTop: "15px" }}>
                 <Col md={10}>
                   <p style={{ textAlign: "center" }}>
-                    {" "}
                     <strong> Code Switch </strong>{" "}
                   </p>
                 </Col>
@@ -126,21 +184,13 @@ function MainContain() {
               <Row style={{ backgroundColor: "#F6F8F9" }}>
                 <Col md={10}>
                   <a href="">
-                    <Card.Img
-                      src={Image4}
-                      style={{
-                        borderEndEndRadius: "30",
-                        height: "190px",
-                        width: "190px",
-                      }}
-                    />
+                    <Card.Img className="cardImageStyle" src={Image4} />
                   </a>
                 </Col>
               </Row>
               <Row style={{ paddingTop: "15px" }}>
                 <Col md={11}>
                   <p style={{ textAlign: "center" }}>
-                    {" "}
                     <strong> Crime Junkie </strong>{" "}
                   </p>
                 </Col>
@@ -158,28 +208,24 @@ function MainContain() {
         </Col>
         <Col md={3}></Col>
       </Row>
-      <Row style={{ paddingTop: "20px" }}>
-        <Col md={3}></Col>
+      <Row className="cardHolder">
         <Col md={6}>
-          <Row>
-            <Col md={12}>
-              <p style={{ textAlign: "right", fontSize: "20px" }}>
-                <ins> View All Popular Podcasts </ins>{" "}
-                <FontAwesome
-                  className="super-crazy-colors"
-                  name="rocket"
-                  size="2x"
-                  spin
-                  style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-                />
-              </p>
-            </Col>
+          <Row style={{ textAlign: "right", fontSize: "17px" }}>
+            <p>
+              <ins> View All Popular Podcasts </ins>{" "}
+              <FontAwesome
+                className="super-crazy-colors"
+                name="rocket"
+                size="2x"
+                spin
+                style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
+              />
+            </p>
           </Row>
         </Col>
       </Row>
-      <Row style={{ paddingTop: "20px" }}>
-        <Col md={3}></Col>
-        <Col md={6}>
+      <Row className="cardHolder">
+        <Col md={8}>
           <Row>
             <Col md={10} style={{ textAlign: "left" }}>
               <h4>
@@ -189,22 +235,14 @@ function MainContain() {
           </Row>
         </Col>
       </Row>
-      <Row style={{ paddingTop: "20px" }}>
-        <Col md={3}></Col>
-        <Col md={6}>
+      <Row className="cardHolder">
+        <Col md={8}>
           <Row>
             <Col>
               <Row style={{ backgroundColor: "#F6F8F9" }}>
                 <Col md={10}>
                   <a href="">
-                    <Card.Img
-                      src={Image2}
-                      style={{
-                        borderEndEndRadius: "30",
-                        height: "190px",
-                        width: "190px",
-                      }}
-                    />
+                    <Card.Img className="cardImageStyle" src={Image2} />
                   </a>
                 </Col>
               </Row>
@@ -229,21 +267,13 @@ function MainContain() {
               <Row style={{ backgroundColor: "#F6F8F9" }}>
                 <Col md={10}>
                   <a href="">
-                    <Card.Img
-                      src={Image3}
-                      style={{
-                        borderEndEndRadius: "30",
-                        height: "190px",
-                        width: "190px",
-                      }}
-                    />
+                    <Card.Img className="cardImageStyle" src={Image3} />
                   </a>
                 </Col>
               </Row>
               <Row style={{ paddingTop: "15px" }}>
                 <Col md={10}>
                   <p style={{ textAlign: "center" }}>
-                    {" "}
                     <strong> Code Switch </strong>{" "}
                   </p>
                 </Col>
@@ -261,21 +291,13 @@ function MainContain() {
               <Row style={{ backgroundColor: "#F6F8F9" }}>
                 <Col md={10}>
                   <a href="">
-                    <Card.Img
-                      src={Image4}
-                      style={{
-                        borderEndEndRadius: "30",
-                        height: "190px",
-                        width: "190px",
-                      }}
-                    />
+                    <Card.Img className="cardImageStyle" src={Image4} />
                   </a>
                 </Col>
               </Row>
               <Row style={{ paddingTop: "15px" }}>
                 <Col md={11}>
                   <p style={{ textAlign: "center" }}>
-                    {" "}
                     <strong> Crime Junkie </strong>{" "}
                   </p>
                 </Col>
@@ -293,22 +315,19 @@ function MainContain() {
         </Col>
         <Col md={3}></Col>
       </Row>
-      <Row style={{ paddingTop: "20px" }}>
-        <Col md={3}></Col>
+      <Row>
         <Col md={6}>
           <Row>
-            <Col md={12}>
-              <p style={{ textAlign: "right", fontSize: "20px" }}>
-                <ins> View All Featured Podcasts</ins>
-                <FontAwesome
-                  className="super-crazy-colors"
-                  name="rocket"
-                  size="2x"
-                  spin
-                  style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
-                />
-              </p>
-            </Col>
+            <p style={{ textAlign: "right", fontSize: "17px" }}>
+              <ins> View All Featured Podcasts</ins>
+              <FontAwesome
+                className="super-crazy-colors"
+                name="rocket"
+                size="2x"
+                spin
+                style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
+              />
+            </p>
           </Row>
         </Col>
       </Row>

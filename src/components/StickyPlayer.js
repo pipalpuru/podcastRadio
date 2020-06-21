@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Image from "../image/tbfc.jpg";
 import FontAwesome from "react-fontawesome";
-import Navbar from "react-bootstrap/Navbar";
 
 function Footer() {
   return (
@@ -30,7 +29,10 @@ function Footer() {
         </Row>
       </Col>
       <Col>
-        <AudioPlayer autoPlay src="http://example.com/audio.mp3" />
+        <AudioPlayer
+          autoPlay
+          src="http://stream.laut.fm/acidjazz?type=.mp3/;stream.mp3"
+        />
       </Col>
       <Col>
         <FontAwesome className="super-crazy-colors" name="rocket" size="20x" />
